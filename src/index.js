@@ -8,8 +8,9 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 import Signup from './pages/signup/Signup';
 import ProfileForm from 'pages/profileForm/ProfileForm';
+import RegComplete from 'pages/regCompleted/RegComplete';
 
-ReactDOM.render(<ProfileForm />, document.getElementById('root'));
+ReactDOM.render(<RegComplete />, document.getElementById('root'));
 
 {
 	/* <BackgroundColorWrapper>
