@@ -6,6 +6,12 @@ $bcolor: #ba54f5;
 	background-color: lightsalmon;
 }
 
+a.nav-link {
+	&:hover {
+		color: $bcolor;
+	}
+}
+
 .single-card-page {
 	.card-container {
 		padding: 100px 0;
