@@ -1,6 +1,5 @@
 import React from 'react';
 import ThemeContextWrapper from '../../components/ThemeWrapper/ThemeWrapper';
-import HorizontalTimeline from 'react-horizontal-timeline';
 
 //css
 import '../main.scss';

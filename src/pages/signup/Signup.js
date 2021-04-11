@@ -15,7 +15,7 @@ import { Card, CardImg, CardBody, CardTitle, CardText } from 'reactstrap';
 //forms
 import { Label, FormText } from 'reactstrap';
 
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+//import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 
 class Signup extends React.Component {
 	constructor(props) {

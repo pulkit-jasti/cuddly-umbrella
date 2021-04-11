@@ -9,8 +9,12 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import Signup from './pages/signup/Signup';
 import ProfileForm from 'pages/profileForm/ProfileForm';
 import RegComplete from 'pages/regCompleted/RegComplete';
+import LoginForm from 'pages/LoginForm';
+import CandidateSignup from 'pages/CandidateSignup';
+import CompanySignup from 'pages/CompanySignup';
+import NavigationBar from 'pages/NavigationBar';
 
-ReactDOM.render(<RegComplete />, document.getElementById('root'));
+ReactDOM.render(<NavigationBar />, document.getElementById('root'));
 
 {
 	/* <BackgroundColorWrapper>
