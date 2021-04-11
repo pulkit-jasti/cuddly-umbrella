@@ -1,0 +1,15 @@
+.profile-form {
+	.card-container {
+		padding: 100px 0;
+		width: 100%;
+
+		display: flex;
+		justify-content: center;
+
+		.Card {
+			width: 90%;
+			max-width: 700px;
+			padding: 30px;
+		}
+	}
+}

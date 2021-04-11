@@ -7,8 +7,9 @@ import 'assets/css/nucleo-icons.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 import Signup from './pages/signup/Signup';
+import ProfileForm from 'pages/profileForm/ProfileForm';
 
-ReactDOM.render(<Signup />, document.getElementById('root'));
+ReactDOM.render(<ProfileForm />, document.getElementById('root'));
 
 {
 	/* <BackgroundColorWrapper>

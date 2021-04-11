@@ -42,86 +42,88 @@ class Signup extends React.Component {
 						</Switch>
 					</BrowserRouter>
 				</BackgroundColorWrapper> */}
-				<Navbar expand='lg' color='dark'>
-					<Container>
-						<div className='navbar-translate'>
-							{/* <NavbarBrand>Navbar</NavbarBrand> */}
-							<NavbarToggler onClick={this.toggle}>
-								<span className='navbar-toggler-bar navbar-kebab'></span>
-								<span className='navbar-toggler-bar navbar-kebab'></span>
-								<span className='navbar-toggler-bar navbar-kebab'></span>
-							</NavbarToggler>
+				<main className='signup'>
+					<Navbar expand='lg' color='dark'>
+						<Container>
+							<div className='navbar-translate'>
+								{/* <NavbarBrand>Navbar</NavbarBrand> */}
+								<NavbarToggler onClick={this.toggle}>
+									<span className='navbar-toggler-bar navbar-kebab'></span>
+									<span className='navbar-toggler-bar navbar-kebab'></span>
+									<span className='navbar-toggler-bar navbar-kebab'></span>
+								</NavbarToggler>
+							</div>
+							<Collapse isOpen={this.state.isOpen} navbar>
+								<Nav navbar>
+									<NavItem active>
+										<NavLink to='#pablo'>Home</NavLink>
+									</NavItem>
+									<NavItem>
+										<NavLink to='#pablo'>Learn More</NavLink>
+									</NavItem>
+								</Nav>
+							</Collapse>
+						</Container>
+					</Navbar>
+					<div className='card-container'>
+						<div className='cards-wrapper'>
+							<Card className='Card'>
+								<CardBody>
+									<h3 className='title'>Candidate Sign-Up</h3>
+									<form>
+										<FormGroup>
+											<Label for='name'>Name</Label>
+											<Input type='text' name='name' id='name' placeholder='Enter your name' />
+										</FormGroup>
+										<FormGroup>
+											<Label for='exampleEmail'>Email address</Label>
+											<Input type='email' name='email' id='exampleEmail' placeholder='john@example.com' />
+										</FormGroup>
+										<FormGroup>
+											<Label for='examplePassword'>Password</Label>
+											<Input type='password' name='password' id='examplePassword' placeholder='Password' autoComplete='off' />
+										</FormGroup>
+										<Button color='primary' type='submit'>
+											Sign-Up
+										</Button>
+										<FormText color='muted'>
+											Already have an account <a href=''>Sign-In</a>
+										</FormText>
+									</form>
+								</CardBody>
+							</Card>
+							<Card className='Card'>
+								<CardBody>
+									<h3 className='title'>Company Sign-Up</h3>
+									<form>
+										<FormGroup>
+											<Label for='company-name'>Name</Label>
+											<Input type='text' name='name' id='company-name' placeholder='Enter your name' />
+										</FormGroup>
+										<FormGroup>
+											<Label for='companyEmail'>Email address</Label>
+											<Input type='email' name='email' id='companyEmail' placeholder='john@example.com' />
+										</FormGroup>
+										<FormGroup>
+											<Label for='companyName'>Company Name</Label>
+											<Input type='text' name='name' id='companyName' placeholder='Enter the company name' />
+										</FormGroup>
+										<FormGroup>
+											<Label for='companyPassword'>Password</Label>
+											<Input type='password' name='password' id='companyPassword' placeholder='Password' autoComplete='off' />
+										</FormGroup>
+										<Button color='primary' type='submit'>
+											Sign-Up
+										</Button>
+										<FormText color='muted'>
+											Already have an account <a href=''>Sign-In</a>
+										</FormText>
+									</form>
+								</CardBody>
+							</Card>
 						</div>
-						<Collapse isOpen={this.state.isOpen} navbar>
-							<Nav navbar>
-								<NavItem active>
-									<NavLink to='#pablo'>Home</NavLink>
-								</NavItem>
-								<NavItem>
-									<NavLink to='#pablo'>Learn More</NavLink>
-								</NavItem>
-							</Nav>
-						</Collapse>
-					</Container>
-				</Navbar>
-				<div className='card-container'>
-					<div className='cards-wrapper'>
-						<Card className='Card'>
-							<CardBody>
-								<h3 className='title'>Candidate Sign-Up</h3>
-								<form>
-									<FormGroup>
-										<Label for='name'>Name</Label>
-										<Input type='text' name='name' id='name' placeholder='Enter your name' />
-									</FormGroup>
-									<FormGroup>
-										<Label for='exampleEmail'>Email address</Label>
-										<Input type='email' name='email' id='exampleEmail' placeholder='john@example.com' />
-									</FormGroup>
-									<FormGroup>
-										<Label for='examplePassword'>Password</Label>
-										<Input type='password' name='password' id='examplePassword' placeholder='Password' autoComplete='off' />
-									</FormGroup>
-									<Button color='primary' type='submit'>
-										Sign-Up
-									</Button>
-									<FormText color='muted'>
-										Already have an account <a href=''>Sign-In</a>
-									</FormText>
-								</form>
-							</CardBody>
-						</Card>
-						<Card className='Card'>
-							<CardBody>
-								<h3 className='title'>Company Sign-Up</h3>
-								<form>
-									<FormGroup>
-										<Label for='company-name'>Name</Label>
-										<Input type='text' name='name' id='company-name' placeholder='Enter your name' />
-									</FormGroup>
-									<FormGroup>
-										<Label for='companyEmail'>Email address</Label>
-										<Input type='email' name='email' id='companyEmail' placeholder='john@example.com' />
-									</FormGroup>
-									<FormGroup>
-										<Label for='companyName'>Company Name</Label>
-										<Input type='text' name='name' id='companyName' placeholder='Enter the company name' />
-									</FormGroup>
-									<FormGroup>
-										<Label for='companyPassword'>Password</Label>
-										<Input type='password' name='password' id='companyPassword' placeholder='Password' autoComplete='off' />
-									</FormGroup>
-									<Button color='primary' type='submit'>
-										Sign-Up
-									</Button>
-									<FormText color='muted'>
-										Already have an account <a href=''>Sign-In</a>
-									</FormText>
-								</form>
-							</CardBody>
-						</Card>
 					</div>
-				</div>
+				</main>
 			</ThemeContextWrapper>
 		);
 	}
