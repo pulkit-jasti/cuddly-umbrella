@@ -28,8 +28,8 @@ import ProfileForm from 'pages/profileForm/ProfileForm';
 import NavigationBar from 'pages/NavigationBar';
 import SideBar from 'pages/SideBar';
 import RegComplete from 'pages/RegComplete';
-import JobCard from 'pages/JobCard';
 import JobListPage from 'pages/JobListPage';
+import CandidateListPage from 'pages/CandidateListPage';
 
 ReactDOM.render(<JobListPage />, document.getElementById('root'));
 

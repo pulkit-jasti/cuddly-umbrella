@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, CardBody, Button } from 'reactstrap';
-import NavigationBar from './NavigationBar';
 
 class JobCard extends React.Component {
 	constructor(props) {
