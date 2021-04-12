@@ -50,6 +50,45 @@ a.nav-link {
 	}
 }
 
+//JobCard.jsx
+.jobs-page {
+	.card-container {
+		//padding: 30px;
+
+		.Card {
+			padding: 10px 20px;
+			margin: 40px auto;
+			color: red !important;
+
+			.btn-container {
+				margin-top: 30px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.jobs-page {
+		.card-container {
+			//padding: 30px;
+
+			.Card {
+				width: 90% !important;
+				text-align: justify;
+
+				.btn-container {
+					margin-top: 30px;
+				}
+			}
+		}
+	}
+}
+
+//
+//
+//
+//
+// RegCompleted.jsx
 .Timeline-container {
 	padding-top: 40px;
 	.timeline {

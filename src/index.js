@@ -28,18 +28,19 @@ import ProfileForm from 'pages/profileForm/ProfileForm';
 import NavigationBar from 'pages/NavigationBar';
 import SideBar from 'pages/SideBar';
 import RegComplete from 'pages/RegComplete';
+import JobCard from 'pages/JobCard';
+import JobListPage from 'pages/JobListPage';
 
-ReactDOM.render(
-	<ThemeContextWrapper>
-		<BackgroundColorWrapper>
-			<BrowserRouter>
-				<Switch>
-					<Route path='/admin' render={props => <AdminLayout {...props} />} />
-					<Route path='/rtl' render={props => <RTLLayout {...props} />} />
-					<Redirect from='/' to='/admin/dashboard' />
-				</Switch>
-			</BrowserRouter>
-		</BackgroundColorWrapper>
-	</ThemeContextWrapper>,
-	document.getElementById('root')
-);
+ReactDOM.render(<JobListPage />, document.getElementById('root'));
+
+// <ThemeContextWrapper>
+// 	<BackgroundColorWrapper>
+// 		<BrowserRouter>
+// 			<Switch>
+// 				<Route path='/admin' render={props => <AdminLayout {...props} />} />
+// 				<Route path='/rtl' render={props => <RTLLayout {...props} />} />
+// 				<Redirect from='/' to='/admin/dashboard' />
+// 			</Switch>
+// 		</BrowserRouter>
+// 	</BackgroundColorWrapper>
+// </ThemeContextWrapper>;
