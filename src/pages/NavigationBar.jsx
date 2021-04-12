@@ -1,7 +1,5 @@
 import React from 'react';
-import './signup/signup.scss';
 import { Navbar, Container, NavbarToggler, Collapse, Nav, NavItem, NavLink } from 'reactstrap';
-import './main.scss';
 
 class NavigationBar extends React.Component {
 	constructor(props) {

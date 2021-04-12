@@ -1,15 +1,14 @@
 import React from 'react';
 import { FormGroup, Input, Button, Card, CardBody, Label, FormText } from 'reactstrap';
-import './signup/signup.scss';
 
-class LoginForm extends React.Component {
+class CandidateLogin extends React.Component {
 	render() {
 		return (
 			<main className='single-card-page'>
 				<div className='card-container single-form'>
 					<Card className='Card' style={{ width: '500px' }}>
 						<CardBody>
-							<h2 className='title'>Login</h2>
+							<h2 className='title'>Candidate Login</h2>
 							<form>
 								<FormGroup>
 									<Label for='exampleEmail'>Email address</Label>
@@ -37,4 +36,4 @@ class LoginForm extends React.Component {
 	}
 }
 
-export default LoginForm;
+export default CandidateLogin;

@@ -1,8 +1,5 @@
 import React from 'react';
-import ThemeContextWrapper from '../../components/ThemeWrapper/ThemeWrapper';
-
-//css
-import '../main.scss';
+import ThemeContextWrapper from '../components/ThemeWrapper/ThemeWrapper';
 
 import { Card, CardImg, CardBody, CardTitle, CardText, Button, FormGroup, Label, Input, FormText } from 'reactstrap';
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import { FormGroup, Input, Button, Card, CardBody, Label, FormText } from 'reactstrap';
-import './signup/signup.scss';
 
 class CompanySignup extends React.Component {
 	render() {
