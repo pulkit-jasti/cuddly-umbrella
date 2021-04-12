@@ -70,6 +70,13 @@ a.nav-link {
 				justify-content: space-between;
 			}
 		}
+
+		.Card.Long {
+			margin: 0 auto;
+			width: 90%;
+			max-width: 700px;
+			padding: 30px;
+		}
 	}
 }
 

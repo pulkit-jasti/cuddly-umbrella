@@ -24,14 +24,15 @@ import CandidateLogin from 'pages/CandidateLogin';
 import CompanyLogin from 'pages/CompanyLogin';
 
 //Other components
-import ProfileForm from 'pages/profileForm/ProfileForm';
+import ProfileForm from 'pages/ProfileForm';
 import NavigationBar from 'pages/NavigationBar';
 import SideBar from 'pages/SideBar';
 import RegComplete from 'pages/RegComplete';
 import JobListPage from 'pages/JobListPage';
 import CandidateListPage from 'pages/CandidateListPage';
+import CreateNewRole from 'pages/CreateNewRole';
 
-ReactDOM.render(<JobListPage />, document.getElementById('root'));
+ReactDOM.render(<CreateNewRole />, document.getElementById('root'));
 
 // <ThemeContextWrapper>
 // 	<BackgroundColorWrapper>
