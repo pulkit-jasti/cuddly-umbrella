@@ -12,7 +12,7 @@ class JobListPage extends React.Component {
 	render() {
 		return (
 			<main className='jobs-page'>
-				<NavigationBar></NavigationBar>
+				<NavigationBar />
 				<div className='card-container'>
 					<JobCard CompanyName='Google' CompanyDescription={sampleDesc[0]} JobStatus='Interviewed' />
 					<JobCard CompanyName='Facebook' CompanyDescription={sampleDesc[1]} JobStatus='Matched' />

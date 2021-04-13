@@ -1,6 +1,6 @@
 import React from 'react';
 import ThemeContextWrapper from '../components/ThemeWrapper/ThemeWrapper';
-
+import NavigationBar from './NavigationBar';
 import { Card, CardImg, CardBody, CardTitle, CardText, Button, FormGroup, Label, Input, FormText } from 'reactstrap';
 
 class RegComplete extends React.Component {
@@ -9,6 +9,7 @@ class RegComplete extends React.Component {
 	render() {
 		return (
 			<ThemeContextWrapper>
+				<NavigationBar />
 				<div className='Timeline-container'>
 					<ul class='timeline' id='timeline'>
 						<li class={this.state.timelineState >= 1 ? 'li complete' : 'li'}>

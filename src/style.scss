@@ -28,9 +28,22 @@ a.nav-link {
 		}
 
 		&.single-form {
-			height: 100vh;
+			height: 91vh;
 			padding: 0;
 			align-items: center;
+		}
+
+		&.home {
+			.btn-container {
+				//background-color: lightblue;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.or {
+				margin: 20px 0;
+			}
 		}
 	}
 

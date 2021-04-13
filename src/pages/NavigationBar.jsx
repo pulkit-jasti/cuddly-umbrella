@@ -28,7 +28,7 @@ class NavigationBar extends React.Component {
 					<Collapse isOpen={this.state.isOpen} navbar>
 						<Nav navbar>
 							<NavItem active>
-								<NavLink href='local'>Home</NavLink>
+								<NavLink href='/'>Home</NavLink>
 							</NavItem>
 							<NavItem>
 								<NavLink href='#'>Profile</NavLink>
@@ -40,7 +40,7 @@ class NavigationBar extends React.Component {
 								<NavLink href='#'>Invite</NavLink>
 							</NavItem>
 							<NavItem>
-								<NavLink href='#'>Sign-out</NavLink>
+								<NavLink href='/'>Sign-out</NavLink>
 							</NavItem>
 						</Nav>
 					</Collapse>

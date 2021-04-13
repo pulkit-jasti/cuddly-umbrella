@@ -1,10 +1,13 @@
 import React from 'react';
 import { Card, CardBody, Button, FormGroup, Label, Input } from 'reactstrap';
+import { Link } from 'react-router-dom';
+import NavigationBar from './NavigationBar';
 
 class ProfileForm extends React.Component {
 	render() {
 		return (
 			<main className='single-card-page'>
+				<NavigationBar />
 				<div className='card-container'>
 					<Card className='Card long'>
 						<CardBody>
@@ -34,10 +37,10 @@ class ProfileForm extends React.Component {
 									<Label for=''>Dribble</Label>
 									<Input type='text' name='' id='' placeholder='https://dribbble.com/userName' />
 								</FormGroup>
-								<FormGroup>
+								{/* <FormGroup>
 									<Label for='examplePassword'>Password</Label>
 									<Input type='password' name='password' id='examplePassword' placeholder='Password' autoComplete='off' />
-								</FormGroup>
+								</FormGroup> */}
 								{/* <FormGroup>
 										<Label for='resume'>Resume</Label>
 										<input type='file' />
@@ -58,9 +61,11 @@ class ProfileForm extends React.Component {
 									<Label for=''>Competitive Programming Profiles</Label>
 									<Input type='textarea' name='' id='' placeholder='' />
 								</FormGroup>
-								<Button color='primary' type='submit'>
-									Submit
-								</Button>
+								<Link to='/registration-completed'>
+									<Button color='primary' type='submit'>
+										Submit
+									</Button>
+								</Link>
 							</form>
 						</CardBody>
 					</Card>

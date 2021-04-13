@@ -31,8 +31,16 @@ import RegComplete from 'pages/RegComplete';
 import JobListPage from 'pages/JobListPage';
 import CandidateListPage from 'pages/CandidateListPage';
 import CreateNewRole from 'pages/CreateNewRole';
+import App from 'App';
 
-ReactDOM.render(<CreateNewRole />, document.getElementById('root'));
+import { BrowserRouter as Router } from 'react-router-dom';
+
+ReactDOM.render(
+	<Router>
+		<App />
+	</Router>,
+	document.getElementById('root')
+);
 
 // <ThemeContextWrapper>
 // 	<BackgroundColorWrapper>

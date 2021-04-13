@@ -1,10 +1,13 @@
 import React from 'react';
 import { FormGroup, Input, Button, Card, CardBody, Label, FormText } from 'reactstrap';
+import { Link } from 'react-router-dom';
+import NavigationBar from './NavigationBar';
 
 class CompanySignup extends React.Component {
 	render() {
 		return (
 			<main className='single-card-page'>
+				<NavigationBar />
 				<div className='card-container single-form'>
 					<Card className='Card' style={{ width: '500px' }}>
 						<CardBody>
@@ -26,11 +29,13 @@ class CompanySignup extends React.Component {
 									<Label for='companyPassword'>Password</Label>
 									<Input type='password' name='password' id='companyPassword' placeholder='Password' autoComplete='off' />
 								</FormGroup>
-								<Button color='primary' type='submit'>
-									Sign-Up
-								</Button>
+								<Link to='/candidates-list'>
+									<Button color='primary' type='submit'>
+										Sign-Up
+									</Button>
+								</Link>
 								<FormText color='muted'>
-									Already have an account <a href=''>Sign-In</a>
+									Already have an account ? <Link to='/company-login'>Login</Link>
 								</FormText>
 							</form>
 						</CardBody>

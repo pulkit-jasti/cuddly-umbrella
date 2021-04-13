@@ -1,10 +1,13 @@
 import React from 'react';
 import { Card, CardBody, Button, FormGroup, Label, Input } from 'reactstrap';
+import NavigationBar from './NavigationBar';
+import { Link } from 'react-router-dom';
 
 class CreateNewRole extends React.Component {
 	render() {
 		return (
 			<main className='single-card-page'>
+				<NavigationBar />
 				<div className='card-container single-form'>
 					<Card className='Card long'>
 						<CardBody>
@@ -26,9 +29,11 @@ class CreateNewRole extends React.Component {
 									<Label for='github'>Experience</Label>
 									<Input type='text' name='github' id='github' placeholder='https://github.com/userName' />
 								</FormGroup>
-								<Button color='primary' type='submit'>
-									Submit
-								</Button>
+								<Link to='/candidates-list'>
+									<Button color='primary' type='submit'>
+										Create Role
+									</Button>
+								</Link>
 							</form>
 						</CardBody>
 					</Card>
